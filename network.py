@@ -52,7 +52,6 @@ class MyRetinaModel(LightningModule):
         if isinstance(features, torch.Tensor):
             features = OrderedDict([("0", features)])
 
-        # TODO: Do we want a list or a dict?
         features = list(features.values())
 
         # compute the retinanet heads outputs using the features

@@ -35,12 +35,9 @@ def training_val(args,
 
     annotation_data = get_annotation_data(json_path)
 
-    # TODO
     list_image_filenames = viz_utils.filter_files(train_ids, annotation_data)
     print(f'train on {len(list_image_filenames)} against {len(train_ids)}')
-    # random.shuffle(list_image_filenames)
 
-    # TODO: Normalization
     tfms = A.Compose([
         A.HorizontalFlip(p=0.5),
         A.VerticalFlip(p=0.5),
