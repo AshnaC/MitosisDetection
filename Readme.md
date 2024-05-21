@@ -1,3 +1,5 @@
+Implementation based on - https://www.sciencedirect.com/science/article/pii/S1361841522003279
+
 The task of the challenge is the generalization of the detection of mitotic figures to multiple microscopy whole slide image scanners.
 
 The data set consists of 200 cases of human breast cancer. Each of the images was cropped from a whole slide image. The region for cropping was selected by a pathologist according to current guidelines. All images come from the same lab (UMC Utrecht) and have thus similar staining intensity, i.e. all visible differences in representation can be attributed to a different digital representation by the acquisition device.
